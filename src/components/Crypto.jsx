@@ -2,7 +2,7 @@ import React from 'react'
 
 function Crypto() {
   return (
-    <div>Cto</div>
+    <div>Crypto</div>
   )
 }
 
