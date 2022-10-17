@@ -18,6 +18,7 @@ function Crypto({simplified}) {
 
 
   return (
+<<<<<<< HEAD
     <div>
       <Row gutter={[32, 32]} className="crypto-card-container">
         {cryptos?.map((cur) =>(
@@ -46,6 +47,9 @@ function Crypto({simplified}) {
 
 
     </div>
+=======
+    <div>rypto</div>
+>>>>>>> ab3c46a3e05ff5817a3fcaa48d5cdd83acce10da
   )
 }
 
