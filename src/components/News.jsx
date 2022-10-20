@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Select, Typography, Row, Col, Avatar, Card} from 'antd'
-//import moment from 'moment'
+import moment from 'moment'
 
 import {useGetCryptosQuery} from './API/CryptApi'
 import { useGetCryptoNewsQuery } from './API/Newsapi'
@@ -45,10 +45,11 @@ function News({simplified}) {
                 </p>
                 <div className='provider-container'>
                   <div>
-                    <Avatar src={news.provider[0]?.image?.thumbnail?.contenturl  || demoImg} alt="newsAvatar"/>
+                
+                    <Avatar src={news.provider[0]?.image?.thumbnail?.contentUrl  || demoImg} alt="newsAvatar"/>
                     <Text className='provider-name'>{news.provider[0]?.name}</Text>
                   </div>
-                  <Text>{(news.datePublished).startOf('ss').fromNow()}</Text>
+                  <Text>{moment(news.datePublished).startOf('ss').fromNow()}</Text>
 
                 </div>
               </a>
